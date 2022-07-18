@@ -30,6 +30,8 @@ class ViewContactActivity : AppCompatActivity() {
         binding.tvphonee.text=phone
         val email=extras?.getString("EMAIL","")
         binding.tvemaill.text=email
+        val address=extras?.getString("ADDRESS","")
+
 
 
         Toast.makeText(this,"$name:$email",Toast.LENGTH_LONG).show()
