@@ -1,22 +1,19 @@
-package dev.phelisia.mycontacts
+package dev.phelisia.mycontacts.ui
 
-import android.content.Context
 import android.content.Intent
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
-import android.widget.TextView
 import android.widget.Toast
-import androidx.appcompat.view.menu.MenuView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
+import dev.phelisia.mycontacts.model.Contact
+import dev.phelisia.mycontacts.R
 import dev.phelisia.mycontacts.databinding.ContactListItemBinding
 
 class ContactsAdapter(var contactList: List<Contact>):RecyclerView.Adapter<ContactsViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ContactsViewHolder {
         var binding=ContactListItemBinding.inflate(LayoutInflater.from(parent.context),parent,false)
-        var contactsViewHolder=ContactsViewHolder(binding)
+        var contactsViewHolder= ContactsViewHolder(binding)
         return contactsViewHolder
     }
 
@@ -38,7 +35,7 @@ class ContactsAdapter(var contactList: List<Contact>):RecyclerView.Adapter<Conta
             Toast.makeText(context,"you have clicked on ${currentContact}the image",Toast.LENGTH_SHORT).show()
         }
 holder.binding.cvContact.setOnClickListener{
-    val  intent=Intent(context,ViewContactActivity::class.java)
+    val  intent=Intent(context, ViewContactActivity::class.java)
     intent.putExtra("NAME",currentContact.name)
     intent.putExtra("EMAIL",currentContact.email)
     intent.putExtra("ADDRESS",currentContact.address)

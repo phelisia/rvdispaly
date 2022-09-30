@@ -8,6 +8,7 @@
         <entry key="app/src/main/res/drawable/ic_baseline_message_24.xml" value="0.2015" />
         <entry key="app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.2015" />
         <entry key="app/src/main/res/drawable/ic_baseline_video_call_24.xml" value="0.2015" />
+        <entry key="app/src/main/res/layout/activity_add_contact.xml" value="0.15897435897435896" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="app/src/main/res/layout/activity_view_contact.xml" value="0.15" />
         <entry key="app/src/main/res/layout/contact_list_item.xml" value="0.18" />
